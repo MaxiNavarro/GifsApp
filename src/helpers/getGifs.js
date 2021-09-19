@@ -14,8 +14,4 @@ export const getGifs = async(category) => {
     })
 
     return gifs;
-
-    //console.log(gifs);
-    //setImages(gifs);
-
 }

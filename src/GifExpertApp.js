@@ -6,21 +6,15 @@ export const GifExpertApp = () => {
 
     const [categories, setCategories] = useState(['Rick & Morty']);
     
-    // const handleAdd = () => {
-    //     //setCategories([...categories, 'HunterXHunter']);
-    //     setCategories(cats => ['HunterXHunter', ...categories]);
-    // }
-
     return (
         <>
-            <h2>GifExpertApp</h2>
+            <h2>GifsApp</h2>
             <AddCategory setCategories={setCategories} />
             <hr />
 
             <ol>
                 {
                     categories.map(category => (
-                        //<li key={category}>{category}</li>
                         <GifGrid 
                             key={category}
                             category={category} />

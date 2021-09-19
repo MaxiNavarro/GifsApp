@@ -4,17 +4,7 @@ import { GifGridItem } from './GifGridItem';
 
 export const GifGrid = ({category}) => {
 
-    // const [images, setImages] = useState([]);
     const {data:images, loading} = useFetchGifs(category);
-
-    // useEffect(() => {
-    //     getGifs(category)
-    //         .then(setImages);
-    // }, [category]) // evita bucle infinito
-
-    
-
-    //getGifs();
 
     return (
         <>
